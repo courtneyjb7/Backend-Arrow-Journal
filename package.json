@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage --forceExit",
+    "testPrettier": "prettier --check .",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "husky": "^7.0.4",
+    "jest": "^28.1.0",
+    "lint-staged": "^12.4.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.3",
+    "prettier": "^2.6.2",
+    "start": "^5.1.0",
+    "ts-jest": "^28.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  }
+}
