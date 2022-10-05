@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://courtneyjb7.github.io/Backend-Arrow-Journal",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "jest --collectCoverage --forceExit",
     "testPrettier": "prettier --check .",
     "dev": "nodemon index.js",
